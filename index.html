@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>j产品图片360度旋转</title>
+<style>
+.wrap{margin:0 auto;width:800px;height:533px;}
+</style>
+</head>
+<body>
+	  <div class="wrap">
+		<div id="circlr">
+		  <img data-src="picture/00.jpg">
+		  <img data-src="picture/01.jpg">
+		  <img data-src="picture/02.jpg">
+		  <img data-src="picture/03.jpg">
+		  <img data-src="picture/04.jpg">
+		  <img data-src="picture/05.jpg">
+		  <img data-src="picture/06.jpg">
+		  <img data-src="picture/07.jpg">
+		  <img data-src="picture/08.jpg">
+		  <img data-src="picture/09.jpg">
+		  <img data-src="picture/10.jpg">
+		  <img data-src="picture/11.jpg">
+		  <img data-src="picture/12.jpg">
+		  <img data-src="picture/13.jpg">
+		  <img data-src="picture/14.jpg">
+		  <img data-src="picture/15.jpg">
+		  <div id="loader"></div>
+		</div>
+	  </div>
+<script src="js/jquery.min.js"></script>
+<script src="js/circlr.min.js"></script>
+<script type="text/javascript">
+	var crl = circlr('circlr', {
+	  scroll : true,  //开启滚轮旋转  默认关闭
+	  loader : 'loader',
+	  autoplay : true,  //开启自动旋转  默认关闭
+	  playSpeed : 200   //播放速度 默认100
+	});
+</script>
+</body>
+</html>
